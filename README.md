@@ -4,7 +4,7 @@
 [![Total Downloads](https://poser.pugx.org/buymeua/parser/downloads)](https://packagist.org/packages/buymeua/parser)
 [![Tests](https://github.com/buymeua/parser/actions/workflows/action.yml/badge.svg?branch=master)](https://github.com/buymeua/parser/actions)
 [![Laravel](https://img.shields.io/badge/Laravel-FF2D20?logo=laravel&logoColor=white)](https://github.com/https://github.com/Buymeua/parser)
-[![Made with GH Actions](https://img.shields.io/badge/CI-GitHub_Actions-blue?logo=github-actions&logoColor=white)](https://github.com/features/actions "Go to GitHub Actions homepage")
+[![CD](https://img.shields.io/badge/CI-GitHub_Actions-blue?logo=github-actions&logoColor=white)](https://github.com/features/actions "CD")
 [![License](http://poser.pugx.org/buymeua/parser/license)](https://packagist.org/packages/buymeua/parser)
 [![PHP Version Require](http://poser.pugx.org/buymeua/parser/require/php)](https://packagist.org/packages/buymeua/parser)
 [![Fruitcake](https://img.shields.io/badge/Powered%20By-Splx-b2bc35.svg)](https://splx-rust.ml)
