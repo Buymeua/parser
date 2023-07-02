@@ -9,9 +9,9 @@ This package can parse files with any format with custom adapters!
 
 ## Installation
 
-- Package requires php-xmlrpc and php-mbstring
+- Package requires php-xmlrpc and php-mbstring (but need check before install maybe you have this packages on the your server)
 
-```
+```bash
 sudo apt-get install php-xmlrpc php-mbstring
 ```
 
