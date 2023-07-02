@@ -7,7 +7,7 @@
 [![Made with GH Actions](https://img.shields.io/badge/CI-GitHub_Actions-blue?logo=github-actions&logoColor=white)](https://github.com/features/actions "Go to GitHub Actions homepage")
 [![Fruitcake](https://img.shields.io/badge/Powered%20By-Splx-b2bc35.svg)](https://splx-rust.ml)
 
-This package can parse files with any format with custom adapters!
+This package can parse files with any format with custom adapters for example we have two adapters for xml and yml files!
 
 ## Installation
 
