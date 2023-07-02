@@ -1,7 +1,7 @@
 # Laravel package for work with YML import/export
 
-[![Tests](https://github.com/buymeua/laravel-buyme-parser/actions/workflows/action.yml/badge.svg?branch=master)](https://github.com/buymeua/laravel-buyme-parser/actions)
-[![Laravel](https://img.shields.io/badge/Laravel-FF2D20?logo=laravel&logoColor=white)](https://github.com/https://github.com/Buymeua/laravel-buyme-parser)
+[![Tests](https://github.com/buymeua/parser/actions/workflows/action.yml/badge.svg?branch=master)](https://github.com/buymeua/parser/actions)
+[![Laravel](https://img.shields.io/badge/Laravel-FF2D20?logo=laravel&logoColor=white)](https://github.com/https://github.com/Buymeua/parser)
 [![Made with GH Actions](https://img.shields.io/badge/CI-GitHub_Actions-blue?logo=github-actions&logoColor=white)](https://github.com/features/actions "Go to GitHub Actions homepage")
 [![Fruitcake](https://img.shields.io/badge/Powered%20By-Splx-b2bc35.svg)](https://splx-rust.ml)
 
