@@ -1,4 +1,4 @@
-# Laravel package for work with YML import/export
+# Package for work with Any files Adapter and can parse his
 
 [![Tests](https://github.com/buymeua/parser/actions/workflows/action.yml/badge.svg?branch=master)](https://github.com/buymeua/parser/actions)
 [![Laravel](https://img.shields.io/badge/Laravel-FF2D20?logo=laravel&logoColor=white)](https://github.com/https://github.com/Buymeua/parser)
