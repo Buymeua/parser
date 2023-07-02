@@ -1,6 +1,5 @@
 {
     "name": "buymeua/parser",
-    "version": "1.0.1",
     "description": "Help with parse tests/files with products",
     "keywords": [
         "laravel",
