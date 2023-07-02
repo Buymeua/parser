@@ -18,7 +18,7 @@ sudo apt-get install php-xmlrpc php-mbstring
 - You can install this package via composer using this command:
 
 ```bash
-composer require buyme/parser
+composer require buymeua/parser
 ```
 
 - The package will automatically register itself.
