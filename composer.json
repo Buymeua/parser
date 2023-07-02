@@ -29,9 +29,10 @@
     },
     "require": {
         "php": "^8",
-        "illuminate/support": "^9|^10",
         "ext-simplexml": "*",
-        "ext-xmlreader": "*"
+        "ext-xmlreader": "*",
+        "guzzlehttp/guzzle": "^7.0",
+        "illuminate/support": "^9|^10"
     },
     "require-dev": {
         "laravel/sail": "^1.21",

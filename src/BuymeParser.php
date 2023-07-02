@@ -6,6 +6,8 @@ namespace Buyme\Parser;
 
 use Buyme\Parser\Adapter\ParserInterface;
 use Exception;
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\GuzzleException;
 use Throwable;
 
 /**
@@ -37,13 +39,12 @@ class BuymeParser
             throw new Exception(__("buyme-parser-lang::buyme_parser.errors.file_is_empty", ['filename' => $filename]));
         }
 
-        $extension = pathinfo($filename, PATHINFO_EXTENSION);
-
         $adaptersParser = config('buyme-parser-config.adapters', []);
         if (empty($adaptersParser)) {
             throw new Exception(__("buyme-parser-lang::buyme_parser.errors.config_mapping_parser_is_empty"));
         }
 
+        $extension = $this->getFileExtension($filename);
         $adapterClass = $adaptersParser[$extension] ?? null;
         if ($adapterClass === null) {
             throw new Exception(__("buyme-parser-lang::buyme_parser.errors.config_mapping_parser_adapter_not_found", ['extension' => $extension]));
@@ -57,25 +58,15 @@ class BuymeParser
     public function getFileSize(string $filename): int
     {
         if (str_contains($filename, '://')) {
-            $context = stream_context_create([
-                'http' => [
-                    'method' => 'HEAD',
-                    'ignore_errors' => true
-                ]
-            ]);
+            try {
+                $client = new Client();
 
-            $headers = get_headers($filename, true, $context);
+                $response = $client->get($filename);
 
-            if (isset($headers['Content-Length'])) {
-                return (int)$headers['Content-Length'];
-            } else {
-                $fileContents = file_get_contents($filename);
-                if ($fileContents !== false) {
-                    return strlen($fileContents);
-                }
+                return (int)$response->getBody()->getSize();
+            } catch (GuzzleException | Throwable $e) {
+                return 0;
             }
-
-            return 0;
         } else {
             // Локальный файл
             return filesize($filename);
@@ -100,5 +91,16 @@ class BuymeParser
         }
 
         return $this->driver;
+    }
+    private function getFileExtension(string $filename): string
+    {
+        $parts = explode('?', $filename);
+
+        if (isset($parts[0])) {
+            $filename = basename($parts[0]);
+            return pathinfo($filename, PATHINFO_EXTENSION);
+        }
+
+        return "";
     }
 }

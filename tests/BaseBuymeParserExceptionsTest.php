@@ -15,6 +15,7 @@ class BaseBuymeParserExceptionsTest extends BaseBuymeParserTest
     private string $xmlEmptyFile = __DIR__ . '/files/xml/empty.xml';
     private string $xmlEmptyHttpFile = __DIR__ . 'https://example.com/files/xml/empty.xml';
     private string $undefinedFileExtension = __DIR__ . '/files/txt/undefined.txt';
+    private string $realHttpErrorFileLinkWithoutParameters = 'https://hammerite.prom.ua/products_feed.xml';
 
     /**
      * @throws Exception
@@ -106,6 +107,27 @@ class BaseBuymeParserExceptionsTest extends BaseBuymeParserTest
 
         /** @var BuymeParser $parser */
         $parser = $this->mockFunction(BuymeParser::class, 'getFileSize', 0);
+
+        $expectedMessage = __("buyme-parser-lang::buyme_parser.errors.file_is_empty", [
+            'filename' => $this->xmlEmptyHttpFile
+        ]);
+
+        $this->expectException(Exception::class);
+        $this->expectExceptionMessage($expectedMessage);
+
+        $parser->open($this->xmlEmptyHttpFile);
+    }
+
+    /**
+     * @throws Exception
+     */
+    public function testOpenHttpErrorFileSimpleXMLAdapter()
+    {
+        Config::set('buyme-parser-config.adapters', [
+            'xml' => SimpleXML::class,
+        ]);
+
+        $parser = new BuymeParser();
 
         $expectedMessage = __("buyme-parser-lang::buyme_parser.errors.file_is_empty", [
             'filename' => $this->xmlEmptyHttpFile
