@@ -6,6 +6,7 @@ namespace Buyme\Parser;
 
 use Buyme\Parser\Adapter\ParserInterface;
 use Exception;
+use Throwable;
 
 /**
  * @mixin ParserInterface
@@ -53,17 +54,30 @@ class BuymeParser
         $this->driver->open($filename);
     }
 
-    private function getFileSize(string $filename): int
+    public function getFileSize(string $filename): int
     {
         if (str_contains($filename, '://')) {
-            // Remote file
-            $headers = get_headers($filename, true);
-            if ($headers && isset($headers['Content-Length'])) {
+            $context = stream_context_create([
+                'http' => [
+                    'method' => 'HEAD',
+                    'ignore_errors' => true
+                ]
+            ]);
+
+            $headers = get_headers($filename, true, $context);
+
+            if (isset($headers['Content-Length'])) {
                 return (int)$headers['Content-Length'];
+            } else {
+                $fileContents = file_get_contents($filename);
+                if ($fileContents !== false) {
+                    return strlen($fileContents);
+                }
             }
+
             return 0;
         } else {
-            // Local file
+            // Локальный файл
             return filesize($filename);
         }
     }

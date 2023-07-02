@@ -13,6 +13,7 @@ class BaseBuymeParserExceptionsTest extends BaseBuymeParserTest
 {
     private string $xmlNotExistsFile = __DIR__ . '/files/xml/notExists.xml';
     private string $xmlEmptyFile = __DIR__ . '/files/xml/empty.xml';
+    private string $xmlEmptyHttpFile = __DIR__ . 'https://example.com/files/xml/empty.xml';
     private string $undefinedFileExtension = __DIR__ . '/files/txt/undefined.txt';
 
     /**
@@ -95,5 +96,24 @@ class BaseBuymeParserExceptionsTest extends BaseBuymeParserTest
         $this->expectExceptionMessage($expectedMessage);
 
         $parser->open($this->undefinedFileExtension);
+    }
+
+    public function testGetFileSizeWithRemoteFile()
+    {
+        Config::set('buyme-parser-config.adapters', [
+            'xml' => SimpleXML::class,
+        ]);
+
+        /** @var BuymeParser $parser */
+        $parser = $this->mockFunction(BuymeParser::class, 'getFileSize', 0);
+
+        $expectedMessage = __("buyme-parser-lang::buyme_parser.errors.file_is_empty", [
+            'filename' => $this->xmlEmptyHttpFile
+        ]);
+
+        $this->expectException(Exception::class);
+        $this->expectExceptionMessage($expectedMessage);
+
+        $parser->open($this->xmlEmptyHttpFile);
     }
 }

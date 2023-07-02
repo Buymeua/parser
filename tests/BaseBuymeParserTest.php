@@ -41,4 +41,18 @@ abstract class BaseBuymeParserTest extends BaseTestCase
         }
         return $difference;
     }
+
+    protected function mockFunction($className, $functionName, $returnValue)
+    {
+        $mock = $this->getMockBuilder($className)
+            ->onlyMethods([$functionName])
+            ->getMock();
+
+        $mock->method($functionName)
+            ->willReturn($returnValue);
+
+        $this->app->instance($className, $mock);
+
+        return $mock;
+    }
 }

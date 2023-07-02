@@ -93,6 +93,8 @@ class XMLReader implements ParserInterface
                             if ($xml->nodeType == \XMLReader::ELEMENT) {
                                 $name = mb_strtolower($xml->name);
 
+                                $tmpArr = [];
+
                                 if ($name == 'param') {
                                     $tmpArr = ['name' => $xml->getAttribute('name')];
                                 }
