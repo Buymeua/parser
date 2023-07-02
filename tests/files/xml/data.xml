@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE yml_catalog
+SYSTEM "shops.dtd">
+<yml_catalog date="2023-06-30 15:43">
+ <shop>
+  <currencies>
+   <currency id="UAH" rate="1"/>
+  </currencies>
+  <categories>
+   <category id="1059">РПС Розгрузки</category>
+   <category id="1062">Ремені для зброї</category>
+   <category id="1058">Підсумки тактичні</category>
+   <category id="1060">Наколінники та налокітники</category>
+   <category id="1065">Каремати та сидушки</category>
+   <category id="1082">Шоломи та аксесуари </category>
+   <category id="1096" parentId="1082">Навушники та беруші</category>
+   <category id="1097" parentId="1082">Аксесуари до шоломів</category>
+   <category id="1098" parentId="1082">Кавери</category>
+   <category id="1061">Тактичний одяг</category>
+   <category id="1056">Рюкзаки, сумки та баули</category>
+   <category id="1064">Тактичне взуття</category>
+   <category id="1063">Турнікети та бандажі</category>
+   <category id="1087"> Комплектуючі та тюнінг для зброї</category>
+   <category id="1094">Акційні товари</category>
+  </categories>
+  <offers>
+   <offer id="619" group_id="7455" available="true" in_stock="true">
+    <url>https://kiborg.com.ua/ru/dzhhut-turniket-dlia-zsu/</url>
+    <price>250</price>
+    <currencyId>UAH</currencyId>
+    <categoryId>1063</categoryId>
+    <picture>https://kiborg.com.ua/content/images/20/dzhhut-turniket-dlia-zsu-78528459121857_+141bf65117.jpg</picture>
+    <picture>https://kiborg.com.ua/content/images/34/remin-trokhtochkovyi-dlia-ak-rpk-olyva-21322376457063_+c4530a1b01.jpg</picture>
+    <picture>https://kiborg.com.ua/content/images/34/remin-trokhtochkovyi-dlia-ak-rpk-olyva-35754194624852_+fe09c51158.png</picture>
+    <picture>https://kiborg.com.ua/content/images/34/remin-trokhtochkovyi-dlia-ak-rpk-olyva-58682690243141_+bee7e87efd.png</picture>
+    <picture>https://kiborg.com.ua/content/images/34/remin-trokhtochkovyi-dlia-ak-rpk-olyva-11508243675364_+8204b20661.png</picture>
+    <picture>https://kiborg.com.ua/content/images/34/remin-trokhtochkovyi-dlia-ak-rpk-olyva-12187600282425_+267e13fd11.png</picture>
+    <picture>https://kiborg.com.ua/content/images/34/remin-trokhtochkovyi-dlia-ak-rpk-olyva-21947506931055_+8e82f6fc6c.png</picture>
+    <picture>https://kiborg.com.ua/content/images/34/remin-trokhtochkovyi-dlia-ak-rpk-olyva-77482128892051_+07a4b8be61.png</picture>
+    <picture>https://kiborg.com.ua/content/images/34/remin-trokhtochkovyi-dlia-ak-rpk-olyva-90914079145847_+c1561ce6d1.png</picture>
+    <picture>https://kiborg.com.ua/content/images/34/remin-trokhtochkovyi-dlia-ak-rpk-olyva-71710092670612_+9f4078c2aa.png</picture>
+    <picture>https://kiborg.com.ua/content/images/34/remin-trokhtochkovyi-dlia-ak-rpk-olyva-63371027784007_+05b6272245.png</picture>
+    <vendorCode>8007</vendorCode>
+    <vendor>no brand</vendor>
+    <name><![CDATA[Жгут турникет для ЗСУ]]></name>
+    <description><![CDATA[<p>Жгут турникет</p> <p>Жгут турникет ремень кровоостанавливающий армейский с закруткой</p> <p>Жгут предназначен для остановки артериального кровотечения и позволяет провести закручивание одной рукой и оказывать самопомощь.</p> <p>Не требует подстилки ткани и может накладываться на обнаженную конечность.</p> <p>ОСОБЕННОСТИ ТУРНИКЕТА:</p> <p>- композитная закрутка<br /> - прочная фурнитура<br /> - Липучка, работающая даже в заснеженном, мокром и загрязненном состоянии (смотреть на фото)<br /> - Пряжка крепко фиксирует ленту даже при полной раслипке.<br /> - Устойчив к механическим повреждениям.<br /> &ndash; Может накладываться на голое тело.<br /> - стабильно высокое качество.</p> <p>ПРИМЕНЕНИЕ:</p> <p>- в бою;<br /> - дорога;<br /> - туристические походы.</p>]]></description>
+    <name_ua><![CDATA[Джгут турнікет для ЗСУ]]></name_ua>
+    <description_ua><![CDATA[<p>Джгут турнікет</p> <p>Джгут турнікет ремінь кровоспинний армійський із закруткою</p> <p>Джгут - призначений для зупинки артеріальної кровотечі та дозволяє провести закручування однією рукою та надавати самодопомогу.</p> <p>Не вимагає підстилання тканини та може накладатися на оголену кінцівку.</p> <p>ОСОБЛИВОСТІ турнікета:</p> <p>- Композитна закрутка<br /> - Міцна фурнітура<br /> - Липучка, що працює навіть у засніженому, мокрому та забрудненому стані (дивитися на фото)<br /> - Пряжка міцно фіксує стрічку навіть за повного розлипання.<br /> - Стійкий до механічних пошкоджень.<br /> &ndash; Може накладатися на голе тіло.<br /> - Стабільно висока якість.</p> <p>ЗАСТОСУВАННЯ:</p> <p>- в бою;<br /> - Дорога;<br /> - Туристичні походи.</p>]]></description_ua>
+    <param name="Цвет">Чорний</param>
+   </offer>
+  </offers>
+ </shop>
+</yml_catalog>

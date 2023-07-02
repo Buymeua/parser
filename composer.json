@@ -1,0 +1,65 @@
+{
+    "name": "buyme/parser",
+    "description": "Help with parse tests/files with products",
+    "keywords": [
+        "laravel",
+        "package",
+        "import",
+        "export",
+        "buyme",
+        "parser",
+        "file"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Serhii Lavryniuk",
+            "email": "lavrinyuk.serik@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Buyme\\Parser\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Buyme\\Parser\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8",
+        "illuminate/support": "^9|^10",
+        "ext-simplexml": "*",
+        "ext-xmlreader": "*"
+    },
+    "require-dev": {
+        "laravel/sail": "^1.21",
+        "nunomaduro/larastan": "^2.0",
+        "orchestra/testbench": "^7|^8",
+        "phpstan/phpstan": "^1.10.22",
+        "phpunit/phpunit": "^9.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Buyme\\Parser\\BuymeParserServiceProvider"
+            ],
+            "aliases": {
+                "Byml": "Buyme\\Parser\\Facades\\BuymeParser"
+            }
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "larastan": "vendor/bin/phpstan analyse"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

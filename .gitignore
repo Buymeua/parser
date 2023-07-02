@@ -1,0 +1,9 @@
+/docker-compose.yml
+/docker/
+/vendor
+.DS_Store
+Thumbs.db
+/.idea
+.phpunit.result.cache
+.php-cs-fixer.cache
+/.env
