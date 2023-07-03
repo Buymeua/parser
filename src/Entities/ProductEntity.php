@@ -62,6 +62,10 @@ class ProductEntity extends ArrayObject
             unset($data['categoryid']);
         }
 
+        if (isset($data['picture'])) {
+            unset($data['picture']);
+        }
+
         return $data;
     }
 }
