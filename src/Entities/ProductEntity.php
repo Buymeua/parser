@@ -45,7 +45,7 @@ class ProductEntity extends ArrayObject
         $data['pickup'] = $this->offsetExists('pickup') && (bool)$this->offsetGet('pickup');
         $data['group_id'] = $this->offsetExists('group_id') ? (int)$this->offsetGet('group_id') : (int)$this->offsetGet('id');
         $data['price'] = $this->offsetExists('price') ? (float)$this->offsetGet('price') : 0;
-        $data['vendorCode'] = $this->offsetExists('vendorCode') ? $this->offsetGet('vendorCode') : '';
+        $data['vendor_code'] = $this->offsetExists('vendorCode') ? $this->offsetGet('vendorCode') : '';
         $data['country_of_origin'] = $this->offsetExists('country_of_origin') ? $this->offsetGet('country_of_origin') : '';
         $data['currency'] = $this->offsetExists('currencyid') ? $this->offsetGet('currencyid') : 'UAH';
         $data['category_id'] = $this->offsetExists('categoryid') ? $this->offsetGet('categoryid') : "";
@@ -54,17 +54,12 @@ class ProductEntity extends ArrayObject
         $data['params'] = $this->getParams();
         $data['pictures'] = $this->getPictures();
 
-        if (isset($data['currencyid'])) {
-            unset($data['currencyid']);
-        }
-
-        if (isset($data['categoryid'])) {
-            unset($data['categoryid']);
-        }
-
-        if (isset($data['picture'])) {
-            unset($data['picture']);
-        }
+        unset(
+            $data['currencyid'],
+            $data['categoryid'],
+            $data['picture'],
+            $data['vendorCode'],
+        );
 
         return $data;
     }
