@@ -45,7 +45,7 @@ class ProductEntity extends ArrayObject
         $data['pickup'] = $this->offsetExists('pickup') && (bool)$this->offsetGet('pickup');
         $data['group_id'] = $this->offsetExists('group_id') ? (int)$this->offsetGet('group_id') : (int)$this->offsetGet('id');
         $data['price'] = $this->offsetExists('price') ? (float)$this->offsetGet('price') : 0;
-        $data['vendor_code'] = $this->offsetExists('vendorCode') ? $this->offsetGet('vendorCode') : '';
+        $data['vendor_code'] = $this->offsetExists('vendorcode') ? $this->offsetGet('vendorcode') : '';
         $data['country_of_origin'] = $this->offsetExists('country_of_origin') ? $this->offsetGet('country_of_origin') : '';
         $data['currency'] = $this->offsetExists('currencyid') ? $this->offsetGet('currencyid') : 'UAH';
         $data['category_id'] = $this->offsetExists('categoryid') ? $this->offsetGet('categoryid') : "";
@@ -58,7 +58,7 @@ class ProductEntity extends ArrayObject
             $data['currencyid'],
             $data['categoryid'],
             $data['picture'],
-            $data['vendorCode'],
+            $data['vendorcode'],
         );
 
         return $data;
