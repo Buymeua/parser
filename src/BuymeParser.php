@@ -15,6 +15,7 @@ use Throwable;
  */
 class BuymeParser
 {
+    private string $contentType = "";
     private ParserInterface $driver;
 
     /**
@@ -63,6 +64,8 @@ class BuymeParser
 
                 $response = $client->get($filename);
 
+                $this->contentType = $response->getHeaderLine('Content-Type');
+
                 return (int)$response->getBody()->getSize();
             } catch (GuzzleException | Throwable $e) {
                 return 0;
@@ -94,13 +97,30 @@ class BuymeParser
     }
     private function getFileExtension(string $filename): string
     {
+        $extension = "";
         $parts = explode('?', $filename);
 
         if (isset($parts[0])) {
             $filename = basename($parts[0]);
-            return pathinfo($filename, PATHINFO_EXTENSION);
+            $extension = pathinfo($filename, PATHINFO_EXTENSION);
         }
 
-        return "";
+        if (empty($extension)) {
+            $mimeType = explode(';', $this->contentType);
+            $mimeType = $mimeType[0] ?? '';
+
+            if (!empty($mimeType)) {
+                return match ($mimeType) {
+                    'text/xml', 'application/xml' => 'xml',
+                    'text/csv' => 'csv',
+                    'application/vnd.ms-excel' => 'xls',
+                    'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' => 'xlsx',
+                    'application/x-yaml' => 'yml',
+                    default => '',
+                };
+            }
+        }
+
+        return $extension;
     }
 }
