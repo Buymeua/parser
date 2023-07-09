@@ -11,6 +11,7 @@ return [
     "errors" => [
         "file_not_exists"                           => "Файл: :filename файлу не існує.",
         "file_is_empty"                             => "Файл: :filename файлу порожній.",
+        "offers_is_empty"                           => "Пропозиції: пропозиції порожні.",
         "config_mapping_parser_is_empty"            => "Конфіг: 'mapping_parser' конфіг порожній.",
         "config_mapping_parser_adapter_not_found"   => "Адаптер: не знайдено адаптера для розширення файлу: :extension",
     ],

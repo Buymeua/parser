@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<shop>
+<categories>
+<category id='157' parentId='105'>Солнцезащитные очки</category>
+<category id='105' parentId='128'>Для мужчин</category>
+<category id='128' parentId='0'>Каталог товаров</category>
+</categories>
+<offers>
+<offer id='13265' available='true' in_stock='true' group_id='13265'>
+<url>https://buymeua.shop/product/13265</url>
+<price>450.0000</price>
+<currencyId>UAH</currencyId>
+<categoryId>157</categoryId>
+<picture>https://cdn.buymeua.shop/buymeua/product/224075/IMG_3925-копия.jpg</picture>
+<picture>https://cdn.buymeua.shop/buymeua/product/224073/1684522243.jpg</picture>
+<picture>https://cdn.buymeua.shop/buymeua/product/224074/1684522246.jpg</picture>
+<name>Очки POLICE silver МЧ5549</name>
+<name_ua>Окуляри POLICE silver МЧ5549</name_ua>
+<vendorCode>16241</vendorCode>
+<country_of_origin>Украина</country_of_origin>
+<regions><region>Одесса</region>
+<region>194015001</region>
+</regions>
+<description><![CDATA[<p>Линза: поликарбонат уровень защиты от ультрафиолета UV400</p>]]></description>
+<description_ua><![CDATA[<p>Лінза: полікарбонат рівень захисту від ультрафіолету UV400</p>]]></description_ua>
+<quantity_in_stock>26</quantity_in_stock>
+<param name='Заказать '>Один размер </param>
+</offer>
+<offer id='13264' available='true' in_stock='true' group_id='13264'>
+<url>https://buymeua.shop/product/13264</url>
+<price>475.0000</price>
+<currencyId>UAH</currencyId>
+<categoryId>157</categoryId>
+<picture>https://cdn.buymeua.shop/buymeua/product/224072/IMG_3934-копия.jpg</picture>
+<picture>https://cdn.buymeua.shop/buymeua/product/224069/1684522038.jpg</picture>
+<picture>https://cdn.buymeua.shop/buymeua/product/224070/1684522045.jpg</picture>
+<picture>https://cdn.buymeua.shop/buymeua/product/224071/1684522075.jpg</picture>
+<name>Очки montblanc МО6658</name>
+<name_ua>Окуляри montblanc МО6658</name_ua>
+<vendorCode>16240</vendorCode>
+<country_of_origin>Украина</country_of_origin>
+<regions><region>Одесса</region>
+<region>194015001</region>
+</regions>
+<description><![CDATA[<p>Линза: поликарбонат уровень защиты от ультрафиолета UV400&nbsp;</p>]]></description>
+<description_ua><![CDATA[<p>Лінза: полікарбонат рівень захисту від ультрафіолету UV400&nbsp;</p>]]></description_ua>
+<quantity_in_stock>7</quantity_in_stock>
+<param name='Заказать '>Один размер </param>
+</offer>
+<offer id='13263' available='true' in_stock='true' group_id='13263'>
+<url>https://buymeua.shop/product/13263</url>
+<price>750.0000</price>
+<currencyId>UAH</currencyId>
+<categoryId>157</categoryId>
+<picture>https://cdn.buymeua.shop/buymeua/product/224078/IMG_3921-копия.jpg</picture>
+<picture>https://cdn.buymeua.shop/buymeua/product/224076/1684522416.jpg</picture>
+<picture>https://cdn.buymeua.shop/buymeua/product/224077/1684522419.jpg</picture>
+<name>Очки chrome hearts  РМ6538</name>
+<name_ua>Окуляри chrome hearts РМ6538</name_ua>
+<vendorCode>16239</vendorCode>
+<country_of_origin>Украина</country_of_origin>
+<regions><region>Одесса</region>
+<region>194015001</region>
+</regions>
+<description><![CDATA[<p>- 100% UV защита<br>- линзы поликарбонат<br>- наличие соответствующей маркировки&nbsp;<br>- качественная фурнитура</p>]]></description>
+<description_ua><![CDATA[<p>- 100% UV захист<br>- лінзи полікарбонат<br>- наявність відповідного маркування&nbsp;<br>- якісна фурнітура</p>]]></description_ua>
+<quantity_in_stock>17</quantity_in_stock>
+<param name='Заказать '>Один размер </param>
+</offer>
+<offer id='13262' available='true' in_stock='true' group_id='13262'>
+<url>https://buymeua.shop/product/13262</url>
+<price>399.0000</price>
+<currencyId>UAH</currencyId>
+<categoryId>157</categoryId>
+<picture>https://cdn.buymeua.shop/buymeua/product/224068/IMG_3939-копия.jpg</picture>
+<picture>https://cdn.buymeua.shop/buymeua/product/224065/1684521852.jpg</picture>
+<picture>https://cdn.buymeua.shop/buymeua/product/224066/1684521855.jpg</picture>
+<picture>https://cdn.buymeua.shop/buymeua/product/224067/1684521859.jpg</picture>
+<name>Очки BMW black ТГ6598</name>
+<name_ua>Окуляри BMW black ТГ6598</name_ua>
+<vendorCode>16238</vendorCode>
+<country_of_origin>Украина</country_of_origin>
+<regions><region>Одесса</region>
+<region>194015001</region>
+</regions>
+<description><![CDATA[<p>Линза: поликарбонат уровень защиты от ультрафиолета UV400&nbsp;</p>]]></description>
+<description_ua><![CDATA[<p>Лінза: полікарбонат рівень захисту від ультрафіолету UV400&nbsp;</p>]]></description_ua>
+<quantity_in_stock>13</quantity_in_stock>
+<param name='Заказать '>Один размер </param>
+</offer>
+<offer id='13261' available='true' in_stock='true' group_id='13261'>
+<url>https://buymeua.shop/product/13261</url>
+<price>350.0000</price>
+<currencyId>UAH</currencyId>
+<categoryId>157</categoryId>
+<picture>https://cdn.buymeua.shop/buymeua/product/224064/IMG_3946-копия.jpg</picture>
+<picture>https://cdn.buymeua.shop/buymeua/product/224061/1684521630.jpg</picture>
+<picture>https://cdn.buymeua.shop/buymeua/product/224062/1684521634.jpg</picture>
+<picture>https://cdn.buymeua.shop/buymeua/product/224063/1684521637.jpg</picture>
+<name>Очки BVLGARI BLACK ТМ6609</name>
+<name_ua>Окуляри BVLGARI BLACK ТМ6609</name_ua>
+<vendorCode>16237</vendorCode>
+<country_of_origin>Украина</country_of_origin>
+<regions><region>Одесса</region>
+<region>194015001</region>
+</regions>
+<description><![CDATA[<p>Линза: поликарбонат уровень защиты от ультрафиолета UV400&nbsp;<br>&nbsp;</p>]]></description>
+<description_ua><![CDATA[<p>Лінза: полікарбонат рівень захисту від ультрафіолету UV400&nbsp;<br>&nbsp;</p>]]></description_ua>
+<quantity_in_stock>8</quantity_in_stock>
+<param name='Заказать '>Один размер </param>
+</offer>
+<offer id='13037' available='true' in_stock='true' group_id='13037'>
+<url>https://buymeua.shop/product/13037</url>
+<price>375.0000</price>
+<currencyId>UAH</currencyId>
+<categoryId>157</categoryId>
+<picture>https://cdn.buymeua.shop/buymeua/product/223338/IMG_1978-копия.jpg</picture>
+<picture>https://cdn.buymeua.shop/buymeua/product/223335/1684054142.jpg</picture>
+<picture>https://cdn.buymeua.shop/buymeua/product/223336/1684054145.jpg</picture>
+<picture>https://cdn.buymeua.shop/buymeua/product/223337/1684054149.jpg</picture>
+<name>Очки Prada black ПЕ7537</name>
+<name_ua>Окуляри Prada black ПЕ7537</name_ua>
+<vendorCode>15882</vendorCode>
+<country_of_origin>Украина</country_of_origin>
+<regions><region>Одесса</region>
+<region>194015001</region>
+</regions>
+<description><![CDATA[<p>материал полимер&nbsp;</p><p>палароид</p>]]></description>
+<description_ua><![CDATA[<p>матеріал полімер&nbsp;</p><p>палароїд</p>]]></description_ua>
+<quantity_in_stock>13</quantity_in_stock>
+<param name='Заказать '>Один размер </param>
+</offer>
+</offers>
+</shop>

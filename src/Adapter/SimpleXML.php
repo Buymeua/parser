@@ -8,6 +8,7 @@ use Buyme\Parser\Entities\CategoryEntity;
 use Buyme\Parser\Entities\ProductEntity;
 use Buyme\Parser\Entities\CurrencyEntity;
 use Closure;
+use Exception;
 use Generator;
 use SimpleXMLElement;
 
@@ -77,9 +78,16 @@ class SimpleXML implements ParserInterface
         return $returnValue;
     }
 
+    /**
+     * @throws Exception
+     */
     public function open(string $xml): bool
     {
         $this->xml = simplexml_load_file($xml);
+
+        if (is_null($this->xml->shop->offers)) {
+            throw new Exception(__("buyme-parser-lang::buyme_parser.errors.offers_is_empty"));
+        }
 
         return (bool)$this->xml;
     }
